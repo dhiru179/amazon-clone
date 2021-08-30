@@ -1,0 +1,221 @@
+body{
+    caret-color: transparent;
+}
+.main-container{
+    display: flex;
+   
+}
+.left-sidebar{
+    background-color: #212A39;
+    height: 100vh;
+    position: sticky;
+    left:0;
+    top:0;
+    width: 226px;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    z-index: 99;
+}
+.left-sidebar.active{
+    width: 60px;
+    transition: 0.3s ease-in;
+}
+.left-sidebar .sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.sidebar .navigation{
+  width: 100%;
+}
+.navigation ul{
+    list-style: none;
+   padding:0px;
+   margin: 0px 0px;
+    
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+}
+ .navigation ul li:first-child{
+     /* background-color: #AFB1B4; */
+     /* pointer-events: none; */
+     all:unset!important;
+ }
+ .navigation ul li:first-child a{
+    background-color: #AFB1B4;
+    }
+.navigation ul li:first-child a .title{
+    color: aliceblue;
+    font-size: 1.8rem;
+        }
+ .navigation ul li:hover{
+    background-color: rgba(0, 0, 0, 0.924);
+    transition: 0.3s ease-in-out;
+    color: white;
+    }
+.navigation ul li a{
+    text-decoration: none;
+    display: inline-flex;
+    /* line-height: 24px; */
+    width: 100%;
+    color:cyan;
+    align-items: center;
+    height: 50px;
+  
+}
+
+.navigation ul li a .icon{
+    display: inline-flex;
+    align-items: center;
+    min-width: 60px;
+    /* height: 50px; */
+    justify-content: center;
+    color: #25abab;
+}
+.navigation ul li a .icon .fas{
+    font-size: 1.2rem;
+}
+.navigation ul li a .title{
+    /* display: none; */
+    /* font-weight: 600;  */
+    font-size: 1.2rem;
+    white-space: nowrap;
+  
+                                                       
+}
+
+/* main content */
+.main{
+    width: calc(100% - 226px);
+    transition: 0.3s ease-in;
+    /* background-color: rgba(230, 217, 243, 0.541); */
+}
+.main.active{
+    width: calc(100% - 60px);
+    transition: 0.3s ease-out;   
+}
+nav{
+    display: flex;
+    height: 50px;
+    background-color:#afb1b4;
+    justify-content:space-between;
+    align-items: center;
+    overflow:hidden;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    
+}
+.toggle {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.toggle a{
+    text-decoration: none;
+    /* padding: 7px; */
+    color: cyan;
+}
+.toggle a:hover{
+    /* background-color: rgb(243, 102, 27); */
+    transition: 0.3s ease-in-out;
+    color:black;
+}
+.toggle a i{
+    font-size: 34px;
+
+}
+.search{
+position: relative;
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.search input[type=search]{
+    width: 350px;
+    height: 32px;
+    font-size: 17px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+}
+/* for remove cross btn */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+.search span{
+    position: relative;
+    right: 16px;
+    /* bottom: 7px; */
+}
+.profile{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 281px;
+
+}
+.profile .bell{
+    font-size: 1.3rem;
+    /* display: flex;
+    justify-content: center; */
+   
+}
+.profile .admin{
+display: flex;
+justify-content: center;
+}
+.profile .admin .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.profile .admin .image img{
+    height: 45px;
+    width: 45px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 6px;
+    
+}
+.profile .admin .user{
+display: flex;
+/* flex-direction: column; */
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+}
+
+.profile .admin .user .admin-name{
+    display: flex;
+  justify-content: center;
+}
+.profile .admin .user .admin-name .details{
+    width: 200px;
+    height: 300px;
+    background-color: blanchedalmond;
+    position: relative;
+    z-index: 1221;
+    display: none;
+}
+
+
+
+/* dashbord container start here, this effective area */
+/* .dashbord-container{
+    margin: 0.8rem;
+    line-height: 1.8rem;
+    font-size: 1rem;
+    word-spacing: 0.1rem;
+} */

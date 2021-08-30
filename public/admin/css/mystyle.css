@@ -1,0 +1,17 @@
+.my_popover{
+    transition: 0.5s;
+    z-index: 131;
+    overflow-y: auto;
+    height: 36px;
+}
+.my_popover::after{
+    content: '';
+    background-color: #17A2B8;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    left: 187px;
+    z-index: -1;
+}
